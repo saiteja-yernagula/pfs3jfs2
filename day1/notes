@@ -1,0 +1,60 @@
+
+
+static website- a website where the content is fixed
+html-structure
+css -stylings
+bootstrap-framework- collection of pre defined code
+
+javascript- dynamic websites- user can able to
+interact
+react- react is a js library 
+
+HTML - hypertext markup language
+ hypertext- text reference to other text
+markup - a set of rules that defines how content 
+should be displayed on browser
+
+it is a standard markup language that is used
+to create structure for a webpage
+it contains series of elements that represented by
+tags 
+
+tag
+<resv words>--open tag
+</resv words>---closing tag
+
+element 
+open tag + content + closing tag
+<h1>primary heading</h1>
+<h1>primary heading</h1>
+
+
+container tags or pair tags
+<h1>primary heading</h1>
+
+self closing tags or empty or void tags
+<img>
+
+vs code
+live server
+live preview
+prettier
+
+basic structure of html
+declaration ---it tell the type and version(5) of doc to the browser
+<!DOCTYPE html>
+
+it acts as a root elements
+<html>
+    head is used to define title , meta data and third party 
+    <head>
+        <title>html page</title>
+    </head>
+    <body>
+        where we will write the acutal content of the page
+    </body>
+
+</html>
+
+
+

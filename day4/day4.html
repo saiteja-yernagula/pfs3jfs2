@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- 
+    css - cascading style sheets
+    cascading- flowing
+    styles- properties
+    sheets- doc
+    
+    it is used to describe the presentation of a html document
+    it deals with colors,text, fonts, backgrounds, animations
+    ,layouts and media queries
+
+    how to insert css
+    1) inline css
+      styles are added to the html element itself by using style attribute
+      <h1 style='color:red;'>inline content</h1>
+    2) internal css
+    styles are added to the html document using style tag in head section
+    <style>
+
+    </style>
+    selectors
+    it is used to target the html elements for applying styles
+
+    syntax
+    selector{
+    declaration
+    property:value;
+    }
+    h2{
+    color:green;
+    }
+
+    3) external css
+  in  exteranal css styles are defined in external file that has
+  .css extension
+  and linked with link tag
+
+  high specificity - high precedence
+  inline having high specificity
+  based on how we define -preferred internal then external
+
+  types of selecctors
+  1) simple selectors
+    a) element selector or tagname selector
+    styles will be applied based on a element
+    h1{
+    color:red;
+    }
+
+    b) class selector
+    it is denoted with .classname
+    it is used to apply styles to the mutliple elements
+    we can take multiple names in classname
+    class='title1 title2 title3'
+   .title{
+            color:green;
+        }
+
+     <h1 class="title" >inline content</h1>
+      <h2 class="title">internal content</h2>
+      <h3 class="title">external conten</h3>
+
+    c) id selector
+    it is denoted by #idname
+    it is used to apply styles uniquely to the element
+    #el1{
+    color:blue;
+    }
+      <h1 class="title" id="el1" >inline content</h1>
+
+  2) combinators
+  3) pseudo class
+  4) attribute
+
+
+
+  specificity in selectors
+  1) id having high specificity
+  2) class having hihg
+  3) tagname
+
+  box model
+  it describes the presentationn of an element
+  it contains four components
+
+  1) content
+  width 
+  height
+  width:50%;
+            height: 200px;
+
+ 2) padding
+   it is the space around the content
+   padding:20px;
+   padding: 10px 20px 30px 40px;
+           top   right bottom left;
+
+   padding: 10px 20px         30px ;
+           top   right/ left   bottom ;
+   padding: 10px    20px  ;        ;
+           top/bottom   right/ left    ;
+
+
+    border 
+    it is line around the padding 
+    border:1px solid black;
+    style----solid 
+            dotted
+            dashed
+            double
+            inset
+            outset
+            ridge
+            groove
+            none
+    border-radius:20px;
+
+    margin
+    it is space around the element or between the elements
+    margin:10px
+
+    -->
+    <link rel="stylesheet" href="demo.css">
+    <style>
+        h1{
+            color:red;
+        }
+        .title{
+            color:green;
+            background:yellow;
+            width:40%;
+            height: 200px;
+            padding: 10px 20px 30px 40px;
+            padding: 10px 20px 30px ;
+            padding: 10px 20px ;
+            border:10px outset blue;
+            border-radius:20px;
+            margin:20px;
+            margin:20px 10px;
+            margin:20px 10px 30px;
+            margin:20px 10px 30px 40px;
+            display:inline-block;
+            background-image: url('data:image/jpeg;base64,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');
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-size:contain;
+            background-size:100% 100%;
+            /* background-attachment:fixed; */
+        }
+        #el1{
+            color:blue;
+        }
+        div{
+            background:lightblue;
+            width:75%;
+            padding:30px;
+            height:200px;
+            margin:20px;
+        }
+        span{
+            background:red;
+            /* for inline eleement width ,height and margin top and bottom will not be applies */
+            width:500px;
+            height:300px;
+            padding:20px;
+            margin:20px;
+            display:inline-block;
+            /* display:inline-block;--- it will behave like a inline but
+            takes properteis like block level */
+        }
+
+        </style>
+</head>
+<body>
+
+    <div>block levele  <span>inline element</span> element </div>
+
+
+
+     <h1>content</h1>
+      <h1 class="title titl2" >inline content</h1>
+      <h1 class="title" id="el1" >inline content</h1>
+      <h1 class="title titl2" >inline content</h1>
+      <h1 class="title" id="el1" >inline content</h1>  <h1 class="title titl2" >inline content</h1>
+      <h1 class="title" id="el1" >inline content</h1>  <h1 class="title titl2" >inline content</h1>
+      <h1 class="title" id="el1" >inline content</h1>  <h1 class="title titl2" >inline content</h1>
+      <h1 class="title" id="el1" >inline content</h1>
+
+
+    
+</body>
+</html>

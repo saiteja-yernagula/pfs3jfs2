@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&family=Playwrite+NZ+Guides&display=swap" rel="stylesheet">
+<style> 
+          /* 
+          combinators- it is used to apply styles based on a relation
+          children selector  -it is used to apply styles to the direct child
+          header>button>a 
+          descendent selector - it is used tto apply styles to all chlids
+          header button
+
+          universal selector 
+          it is used to apply style to every elemtn
+          *{border:1px solid red}
+
+          boiler plate code
+          *{
+          margin:0;
+          padding:0;
+          box-sizing:border-box;}
+
+
+          text properties
+          text-align:center right left;
+          text-shadow: hoffset voffset blurradius color
+          text-shadow:1px 1px 5px black;
+
+            h1{
+          text-shadow:0px 0px 1px rgb(216, 227, 17);
+
+        }
+
+        .box{
+        box-shadow: hoffset voffset blurradius width color
+          box-shadow:0px 0px 1px 2px rgb(216, 227, 17);
+
+        }
+
+        font properties
+
+        1) font-family:curisve;
+        2) font-size:1.2rem;
+        3) font-weight: 100-900;
+          */
+         *{
+        font-family:cursive;
+        /* font-size:1.2rem; */
+        /* font-weight: 900; */
+  /* font-family: "Playwrite NZ Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+          margin:0;
+          padding:0;
+          box-sizing:border-box;
+        }
+        header,footer{
+            background:rgb(4, 4, 121);
+            text-align: center;
+            padding:30px;
+        }
+        header>button{
+            color:white;
+            background:blue;
+            padding:20px;
+            border-radius:10px;
+            margin:10px;
+        }
+        .s1{
+            text-align:center;
+            background:linear-gradient(rgba(0, 0,0,0.65),rgba(0, 0,0,0.65)),url('https://thumbs.dreamstime.com/b/developing-programming-coding-technology-working-software-develop-company-office-141768125.jpg');
+            height:400px;
+            background-size:100% 100%;
+            color:white;
+            padding:150px 20px;
+        }
+
+        .s2{
+            text-align:center;
+            padding:100px;
+        }
+        .box{
+            width:120px;
+            height:120px;
+            color:white;
+            display:inline-block;
+            margin:10px;
+            border-radius:10px;
+            padding:30px;
+            box-shadow:0px 0px 4px 0px rgb(4, 4, 2);
+        }
+
+        .s3{
+            background:whitesmoke;
+            text-align:center;
+            padding:100px;
+        }
+        .card{
+            padding:20px;
+            margin:10px;
+            display:inline-block;
+            width:30%;
+            background:white;
+            border:2px solid blue;
+            border-radius:10px;
+            height:200px;
+            box-shadow:0px 0px 4px 0px rgb(4, 4, 2);
+            transition:all 1s;
+        }
+        .card:hover{
+            transform:translate(0px,-20px)
+        }
+
+      .s4{
+        width:50%;
+        margin:auto;
+        text-align:center;
+      }
+      .box1{
+        padding:10px;
+        background:whitesmoke;
+        margin:10px;
+        font-weight:700;
+      }
+      .box{
+        margin-left:0px;
+        transition:all 1s;
+      }
+      .box:hover{
+        background:blue;
+        transform:translate(0px ,40px);
+        transform:rotate(20deg);
+        transform:scale(0.5);
+      }
+    </style>
+</head>
+<body>
+   <div class="box">content</div>
+
+    <header>
+        <button>Home</button>
+        <button>About</button>
+        <button>Services</button>
+        <button>Contact</button>
+    </header>
+
+    <section class="s1">
+        <h1>Learn CSS Through Projects</h1>
+        <p>This project demonstrates CSS Colors, 
+            Backgrounds, Flexbox, Box Model, Typography,
+             Shadows, and Responsive Design in one modern webpage.</p>
+    </section>
+
+    <section class="s2">
+        <h1>CSS Colors</h1>
+        <div class="parent">
+            <div class="box" style="background:red">content</div>
+            <div class="box" style="background:green">content</div>
+            <div class="box" style="background:blue">content</div>
+            <div class="box" style="background:violet">content</div>
+        </div>
+    </section>
+
+    <section class="s3">
+        <h1>CSS Box Model</h1>
+        <div class="parent">
+            <div class="card">
+                <h3>Card One</h3>
+                <p>Padding creates space inside the element. Border surrounds
+                    side the element.</p>
+            </div>
+             <div class="card">
+                <h3>Card One</h3>
+                <p>This card demonstrates width, border-radius, box-shadow, margin, and.</p>
+            </div>
+             <div class="card">
+                <h3>Card One</h3>
+                <p>Hover over this card to see a smooth animation using CSS transitions.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="s4">
+        <h1>Fonts</h1>
+    <div>
+        <div class="box1">some font content</div>
+        <div class="box1">some font content</div>
+        <div class="box1">some font content</div>
+        <div class="box1">some font content</div>
+    </div>    
+    </section>
+
+    <footer style="color:white;">© 2026 CSS Learning Project | Designed for Frontend Practice</footer>
+</body>
+</html>

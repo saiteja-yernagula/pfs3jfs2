@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <!-- 
+    static website
+    dynamic websites-js
+
+    features
+    addtocart
+    filters
+    sorting
+    form validations
+    crud
+
+    javascript is highlevel interpretted programming language
+    that is used to create dynamic nature to the website
+
+    it was introduces in 1991  by brendan eich
+    es1
+    es2
+    es3
+    es4
+    es5 -pre requistic 
+    
+    how to insert javascript
+    1) inline
+    <button onclick='console.log("inline js")'>click me </button>
+    2) internal
+    <script>
+        console.log('internal js')
+    </script>
+    3) external
+    demo.js
+    console.log('external js')
+
+
+       <button onclick='console.log("inline js")'>click me </button>
+    <script>
+        console.log('internal js')
+    </script>
+    <script src="demo.js"></script>
+
+
+    variables
+    variables are llke container which is used to store the data
+    and data could be anything
+
+    variables are defined with var,let and const keywords followed
+    by variable name followed by value
+
+    var a=10;
+    let b=20;
+    const c=30;
+    console.log(a,b,c)
+
+    variable terms
+    variable declaration
+    var a;
+
+    undefined
+    console.log(a);
+
+    assignment
+    var b;
+    b=20;
+
+    initialization
+    var c=30;
+
+    not defined
+    console.log(d)//unexisting variable
+
+    hoisting
+    hositing a behaviour of js where the declaration of a variable
+    and functions are moved to top even before the execution
+
+    console.log(z)
+    var z
+
+
+   
+    datatypes
+    1) primitive datatypes
+         a) which stores the single values
+         b) which are immutable
+         c) which stores in stack
+
+        1) strings
+        it is a collections of characters that are enclosed in 
+        ' ' or "" or ``
+        strings are immutable
+       var s='hello world'
+        console.log(s[0])
+        s[0]='z'
+        console.log(s)//hello world
+
+        2) numbers
+        var n=10
+        var m=-11
+        var num=10.2
+        console.log(n,m,num)
+
+
+    3) boolean
+    true or false
+    var isadmin=true;
+    var isadmin=false;
+    var membership=true;
+    var isactive=true;
+    console.log(isadmin)
+
+    4) undefined
+    var a
+    console.log(a)
+
+    5) null
+    it is a intentional absence of a value
+    var id=null
+    var empname=null
+    console.log(id+10)
+
+    2) non primitive datatypes
+        a) which stores multiple values
+        b) which are mutable
+        c) which stores in heap
+
+    
+     1) arrays
+     it is used to store multiple values in a single variable
+     it stores both homogenous and hetergenous
+     it can be accessed via numbered index
+  var arr=[1,true,'hello']
+     console.log(arr)
+     
+     console.log(arr[2])//hello
+     arr[2]='hello world'
+     console.log(arr)
+
+     2) objects
+     it is used to store the collection of daata in key value pairs
+    it can be accessed by named indexing
+       let obj={
+    batchno:2,
+    batchcount:25,
+    pythonbatchno:3
+     }
+    obj.batchcount=30;
+  console.log(obj)//{}
+  console.log(obj.batchcount)//30
+  console.log(obj['pythonbatchno'])//3
+
+   3) functions
+   function greet(){
+   console.log('helloworld')
+   }
+   greet()
+
+   console.log(typeof(a))
+
+   how to take input from the user
+   var marks =prompt('enter your marks')
+   console.log(marks)
+
+   dom
+   document object model
+   it is used to control style,structure and layout from js
+
+
+    conditional statements
+    loops
+    functions
+    dom
+    asynchronous concepts
+    callbacks promises
+    api calling
+
+
+
+
+    -->
+ 
+    <script>
+
+
+var marks =prompt('enter your marks')
+var grade=''
+if (marks>80){
+  grade='A'
+}else if(marks>35){
+ grade="B"
+}else{
+    grade="F"
+}
+let container=document.getElementById('container')
+container.innerHTML=`your grade is <h1>${grade}</h1>`
+
+    </script>
+</body>
+</html>

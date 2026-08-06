@@ -107,19 +107,19 @@
       <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="">
       <h1>Nike Shoes</h1>
       <p>2000</p>
-      <button onclick="addtocart()">Addtocart</button>
+      <button onclick="addtocart('nike',2000)">Addtocart</button>
     </div>
         <div class="card">
       <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500  " alt="">
       <h1>Smartwatch</h1>
       <p>1500</p>
-      <button onclick="addtocart()">Addtocart</button>
+      <button onclick="addtocart('watch',1500)">Addtocart</button>
     </div>
         <div class="card">
       <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="">
       <h1>Headphone</h1>
       <p>1200</p>
-      <button onclick="addtocart()">Addtocart</button>
+      <button onclick="addtocart('headphones',1200)">Addtocart</button>
     </div>
   </div>
 
@@ -128,5 +128,36 @@
     <div id="cartitems"></div>
     <h2 id="total">total 0</h2>
   </div>
-</body>        
+  
+  
+  <script>
+    let count=0
+    let sum=0
+    let cart=[]
+    function addtocart(name,price){
+      let cartcount=document.getElementById('cartcount')
+      count++
+      cartcount.innerHTML=count
+     
+      sum+=price
+      let total=document.getElementById('total')
+      total.innerHTML="Total "+sum
+    
+      let product={name,price}
+      cart.push(product)
+        let cartitems=document.getElementById('cartitems')
+        cartitems.innerHTML=""
+      for (i of cart){
+        let output=`
+        <div class='cart-item'>
+        <h1>${i.name}</h1>  
+        <p>${i.price}</p>
+        </div
+        `
+        cartitems.innerHTML+=output
+      }
+      
+    }
+  </script>
+</body> 
 </html>

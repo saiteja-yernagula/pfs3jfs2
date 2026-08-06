@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        
+        loops- for while dowhile for in for off
+        functions-named functions
+
+        named function
+        function sum(a,b){
+        return a+b
+        }
+        sum(2,3)
+
+
+        arrow function 
+        it is a more concise way of writing a function in simple
+        syntax
+
+        let arrowfun1= (a,b)=>{
+        return a+b
+        }
+        console.log(arrowfun1(1,2))
+
+        we can eliminate return if there is a single statement
+        let arrowfun2= (a,b)=> a+b
+        console.log(arrowfun2(2,3))
+
+        we can eliminate () if there is single parameters
+          let arrowfun3= a=> a+a
+          console.log(arrowfun3(4))
+
+
+        anonymous function
+
+    it is a function that defined without a function name
+     let an=function(){
+        console.log('hello world')
+        }
+    an()
+
+    callback function
+    callback funcition is when a function definition is passed to
+    another func as an argument and later executes on outer function
+
+    addtocart    ----payment----order
+
+    
+    function addtocart(callback){
+        console.log('products added to card')
+        callback(order)
+    }
+    function payment(callback){
+       setTimeout(()=>{
+         console.log('payment completed')
+         callback()
+       },7000)
+    }
+    function order(){
+        console.log('order placed')
+    }
+    addtocart(payment)
+
+    closures
+    closures is when a funntion having access and can able to change the variable
+    which is declared in outer function even after the execution
+
+    function outer(){
+        let count=0
+        console.log('outr funciton is executed')
+       return function (){
+        count++
+        console.log(count)
+        console.log('inner function executed')
+       }
+    }
+
+    let a=outer()
+    a()
+    a()
+        */ 
+
+    // outer()()
+    // outer()()
+
+  
+
+
+
+    </script>
+    
+</body>
+</html>

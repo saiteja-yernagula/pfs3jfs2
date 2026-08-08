@@ -95,8 +95,17 @@
         let city=document.getElementById('city')
         let data=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&appid=466ddaa21a8de191e9f608bd11a56acb`)
         let weatherdata=await data.json()
-        console.log(weatherdata)
 
+        let name=document.getElementById('name')
+        let temp=document.getElementById('temp')
+        let state=document.getElementById('state')
+        let humid=document.getElementById('humid')
+        name.innerHTML=city.value
+        temp.innerHTML=weatherdata.main.temp
+        state.innerHTML=weatherdata.weather[0].main
+        humid.innerHTML=weatherdata.main.humidity
+
+    
       }
 
     </script>

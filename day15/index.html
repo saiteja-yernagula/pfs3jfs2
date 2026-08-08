@@ -90,6 +90,16 @@
       </div>
     </div>
  
+    <script>
+    async function getweather(){
+        let city=document.getElementById('city')
+        let data=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&appid=466ddaa21a8de191e9f608bd11a56acb`)
+        let weatherdata=await data.json()
+        console.log(weatherdata)
+
+      }
+
+    </script>
    
   
   </body>

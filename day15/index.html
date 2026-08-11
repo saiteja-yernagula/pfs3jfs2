@@ -91,6 +91,11 @@
     </div>
  
     <script>
+      let data=localStorage.getItem('pfs3')
+      console.log(data)
+
+    let arrdata=JSON.parse(localStorage.getItem('pfs3arr'))
+    console.log(arrdata)
     async function getweather(){
         let city=document.getElementById('city')
         let data=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&appid=466ddaa21a8de191e9f608bd11a56acb`)
